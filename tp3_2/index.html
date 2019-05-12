@@ -1,0 +1,66 @@
+<html>
+<head>
+
+
+</head>
+<body>
+    <h1>TP Numero 3-2</h1>
+    <h2>Fecha de Presentacion 11/05/2019</h2>
+    <h3>Luis Fernando Farji</h3>
+    <p>Definición de Algoritmo</p>
+    <p>1) Definición de Algoritmo (dar un ejemplo)</p>
+    <p>​ Es un conjunto prescrito de instrucciones o reglas bien definidas, ordenadas y finitas que 
+        permiten llevar a cabo una actividad mediante pasos sucesivos que no generen dudas a quien 
+        deba hacer dicha actividad</p>
+    <p>Fuente Wikipedia</p>
+
+    <p>2) Definición de Pseudocodigo</p>
+    <p>Es una descripción de alto nivel compacta e informal1​ del principio operativo de un programa 
+        informático u otro algoritmo.</p>
+
+    <p>Fuente Wikipedia</p>
+    <script>
+        // 3) Realizar los siguientes problemas:
+        // a) Realizar un Programa en JavaScript que resuelva los siguientes problemas (los valores deben ser asignados por ustedes):
+
+        // superficie de un rectángulo
+            var ladoA, ladoB;
+            ladoA= parseInt( prompt('Ingrese el lado A'));
+            ladoB= parseInt( prompt('Ingrese el lado B'));
+            console.log('la superficie del rectangulo es', ladoA*ladoB);
+
+        // superficie de un triangulo
+            var base, altura;
+            base= parseInt( prompt('Ingrese la base del triangulo'));
+            altura= parseInt( prompt('Ingrese la altura del triangulo'));
+            console.log('La superficie del triangulo es :', base*altura/2);
+
+        // superficie de un circulo
+            var radio;
+            radio= parseInt( prompt('Ingrese el valor del radio'));
+            console.log('La superficie del circulo es ', Math.PI*radio*radio);
+
+            // b) Crear 3  variables numéricas, calcular e imprimir producto, suma y el promedio. Mostrar los resultados.
+            var var1, var2, var3;
+            var1=prompt('Ingrese la primer variable');
+            var2=prompt('Ingrese la segunda variable');
+            var3=prompt('Ingrese la tercer variable');
+            var suma= parseInt(var1)+parseInt(var2)+ parseInt(var3);
+            console.log ('El producto de las tres variables es :', var1* var2* var3);
+            console.log ('La suma de las tres variables es: ', suma);
+            console.log ('El promedio de las tres variables es: ', (suma)/3);
+
+            // c) Una tienda ofrece un descuento del 15% sobre el total de cada  compra y un cliente desea saber cuánto deberá pagar
+            //  finalmente por su compra. Deberán crear 5 artículos los cuales tendrán sus nombres y valores, luego mostrar el descuento
+            //   aplicado mas el total final
+
+
+            // d) Dada una cantidad en pesos (el valor lo deben asignar ustedes), obtener la equivalencia en dólares, asumiendo que 
+            // la unidad cambiaría es un dato desconocido.
+
+            // e) Un  cliente realizo una compra y necesita saber el importe del IVA de la misma. Realizar un algoritmo que dado el importe
+            //  de una factura calcular el valor correspondiente al IVA.
+    </script>
+</body>
+
+</html>
