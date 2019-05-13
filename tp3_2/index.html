@@ -27,18 +27,21 @@
             var ladoA, ladoB;
             ladoA= parseInt( prompt('Ingrese el lado A'));
             ladoB= parseInt( prompt('Ingrese el lado B'));
-            console.log('la superficie del rectangulo es', ladoA*ladoB);
+            document.writeln('La superficie del rectangulo es ', ladoA*ladoB);
+            document.write('<br/>');
 
         // superficie de un triangulo
             var base, altura;
             base= parseInt( prompt('Ingrese la base del triangulo'));
             altura= parseInt( prompt('Ingrese la altura del triangulo'));
-            console.log('La superficie del triangulo es :', base*altura/2);
+            document.writeln('La superficie del triangulo es :', base*altura/2);
+            document.write('<br/>');
 
         // superficie de un circulo
             var radio;
             radio= parseInt( prompt('Ingrese el valor del radio'));
-            console.log('La superficie del circulo es ', Math.PI*radio*radio);
+            document.writeln('La superficie del circulo es ', Math.PI*radio*radio);
+            document.write('<br/>');
 
             // b) Crear 3  variables numéricas, calcular e imprimir producto, suma y el promedio. Mostrar los resultados.
             var var1, var2, var3;
@@ -46,20 +49,50 @@
             var2=prompt('Ingrese la segunda variable');
             var3=prompt('Ingrese la tercer variable');
             var suma= parseInt(var1)+parseInt(var2)+ parseInt(var3);
-            console.log ('El producto de las tres variables es :', var1* var2* var3);
-            console.log ('La suma de las tres variables es: ', suma);
-            console.log ('El promedio de las tres variables es: ', (suma)/3);
+            document.writeln ('El producto de las tres variables es :', var1* var2* var3);
+            document.write('<br/>');
+            document.writeln ('La suma de las tres variables es: ', suma);
+            document.write('<br/>');
+            document.writeln ('El promedio de las tres variables es: ', (suma)/3);
+            document.write('<br/>');
 
-            // c) Una tienda ofrece un descuento del 15% sobre el total de cada  compra y un cliente desea saber cuánto deberá pagar
-            //  finalmente por su compra. Deberán crear 5 artículos los cuales tendrán sus nombres y valores, luego mostrar el descuento
+            // c) Una tienda ofrece un descuento del 15% sobre el total de cada  compra y un 
+            // cliente desea saber cuánto deberá pagar
+            //  finalmente por su compra. Deberán crear 5 artículos los cuales tendrán sus nombres 
+            // y valores, luego mostrar el descuento
             //   aplicado mas el total final
+            var articulo1, articulo2, articulo3, articulo4, articulo5, suma, descuento, valorFinal;
+            articulo1=parseInt(prompt('Ingrese el monto del articulo 1'));
+            articulo2=parseInt(prompt('Ingrese el monto del articulo 2'));
+            articulo3=parseInt(prompt('Ingrese el monto del articulo 3'));
+            articulo4=parseInt(prompt('Ingrese el monto del articulo 4'));
+            articulo5=parseInt(prompt('Ingrese el monto del articulo 5'));
+            suma= articulo1 + articulo2 + articulo3+ articulo4 + articulo5;
+            descuento= suma*0.15;
+            valorFinal=suma-descuento;
+            document.writeln('Ud compro articulos por $',suma);
+            document.writeln('<br/>');
+            document.writeln ('Tendra un descuento de $ ', descuento);
+            document.writeln('<br/>');
+            document.writeln('Ud. Pagara $', valorFinal);
+            document.writeln('<br/>');
 
 
             // d) Dada una cantidad en pesos (el valor lo deben asignar ustedes), obtener la equivalencia en dólares, asumiendo que 
             // la unidad cambiaría es un dato desconocido.
 
+            var pesos, cotizacion;
+            pesos=prompt('Ingrese la cantidad de dinero');
+            cotizacion=prompt('Ingrese la cotizacion del dolar')
+            document.writeln('Tu tienes la cantidad de dolares ;' + pesos/cotizacion) 
+            document.write('<br/>');
+
             // e) Un  cliente realizo una compra y necesita saber el importe del IVA de la misma. Realizar un algoritmo que dado el importe
             //  de una factura calcular el valor correspondiente al IVA.
+
+            var compra
+            compra=prompt ('Ingresa el valor de la compra');
+            document.writeln('El importe de iva que tienes que pagar por la compra es de ',compra*0.21)
     </script>
 </body>
 
